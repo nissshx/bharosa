@@ -5,14 +5,14 @@ const ExplorePopularServices = () => {
   const { companies } = CompanyData();
 
   return (
-    <div className="py-12 px-4 sm:px-6 lg:px-8">
+    <div className="py-12 px-4 sm:px-6 lg:px-8 sm:bg-slate-200">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-extrabold text-gray-900 mb-8 text-left p-10">
           Explore Popular Services
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {companies.map((company) => (
-            <div key={company.name} className="bg-white border border-separate border-slate-200 rounded-md overflow-hidden h-full flex flex-col">
+            <div key={company.name} className=" border border-separate border-gray-500 rounded-md overflow-hidden h-full flex flex-col">
               <div className="relative h-40">
                 <img
                   src={company.logo}
