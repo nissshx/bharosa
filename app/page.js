@@ -1,15 +1,41 @@
-import React from 'react'
-import { Analytics } from "@vercel/analytics/react"
-const page = () => {
-  return (
-    <div className='h-screen bg-slate-300  text-gray-900 flex flex-col justify-center items-center text-5xl border p-4 border-slate-800'>
-     <span className=' py-3  px-2 border border-gray-700 border-4 '>bharosa</span> 
-      <span className='text-3xl'>trust/reviews</span>
-      <div className='absolute bottom-4'>
-        *work in progress- stay tuned
-      </div>
-      </div>
-  )
-}
 
-export default page
+import Layout from './components/Topbar';
+
+export default function Home() {
+  return (
+    <Layout>
+      <div className="container mx-auto px-4 py-8">
+        <h1 className="text-5xl font-bold mb-4">bharosa</h1>
+        <h2 className="text-4xl font-serif mb-8">trusted reviews for you to judge</h2>
+        
+        <div className="flex flex-col md:flex-row gap-8">
+          <div className="md:w-1/2">
+            <button className="bg-black text-white px-6 py-3 rounded mr-4">Add a review</button>
+            <span>/ Explore Similar</span>
+            
+            <div className="mt-8 bg-orange-100 rounded-lg overflow-hidden">
+              <img src="https://plus.unsplash.com/premium_photo-1664202526828-6f18286508d2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI5fHxjb25zdW1lcnxlbnwwfHwwfHx8MA%3D%3D" alt="Workspace" className="w-full h-64 object-cover" />
+              
+            </div>
+          </div>
+          
+          <div className="md:w-1/2">
+            <p className="text-xl font-medium">
+             We are a community based forum. We beleive in saving your money and time before you purchase a product or services from a company.
+             <p className='text-2xl'>How ?</p>
+             <p className="text-xl font-medium">Users in our community post reviews on products / services availed by them.These reviews also have a rating out of 5.
+              Before purchasing anything you search and browse through our forums if someone has posted a review/rating . This can be better judged by you whether you can trust the product or not
+             .<p> <span className='font-semibold'>You can also be a part of our community and help others.
+                This project is launched as a demo . We are currently in development mode. Any contributions can be initiated to nissshhdev@gmail.com
+                
+              </span>
+              </p>
+              </p> 
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </Layout>
+  );
+}
