@@ -10,12 +10,12 @@ export default function Layout({ children }) {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="sticky top-0 bg-white z-10 shadow-sm">
+      <header className="sticky top-0 bg-slate-300 z-10 shadow-sm">
         <nav className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <div className="text-2xl font-semibold">bharosa</div>
             
-            {/* Hamburger menu button (visible on small screens) */}
+     
             <button 
               className="lg:hidden"
               onClick={toggleMenu}
@@ -26,7 +26,6 @@ export default function Layout({ children }) {
               </svg>
             </button>
 
-            {/* Desktop menu (hidden on small screens) */}
             <div className="hidden lg:flex space-x-4 items-center">
               <span>Community</span>
               <span>About</span>

@@ -1,46 +1,111 @@
-
 import React from 'react';
 
-const companyData = {
-  companies: [
+const CompanyData = () => {
+  const companies = [
     {
+      logo: "https://upload.wikimedia.org/wikipedia/commons/3/3a/Airtel_logo-01.png",
       name: "Airtel India",
-      description: "Airtel India commonly known as Airtel, is the second largest provider of mobile telephony and third largest provider of fixed telephony in India, and is also a provider of broadband and subscription television services.",
-      category: "Mobile Operator",
-      image: "https://upload.wikimedia.org/wikipedia/commons/3/3a/Airtel_logo-01.png",
-      rating: 3.4
+      description: "Mobile Operator",
+      averageRating: 4.7,
+      services: [
+        "Telecommunications",
+        "Broadband Services",
+        "TV Service Provider",
+        "Digital Payments Bank"
+      ],
+      numberOfReviews: 283
     },
     {
-      name: "Ola Cabs",
-      description: "Sustainable energy company specializing in solar and wind power installations.",
-      category: "Renewable Energy",
-      image: "https://logowik.com/content/uploads/images/ola-cabs.jpg",
-      rating: 4.2
+      logo: "https://1000logos.net/wp-content/uploads/2022/08/Ola-Cabs-Logo-500x281.png",
+      name:"Ola",
+      description: "Cabs & Electric Mobility Company",
+      averageRating: 4.5,
+      services: [
+        "Cabs Booking Provider",
+        "Electric Scooter Company",
+        "Digital Wallet Provider",
+        "AI Products"
+      ],
+      numberOfReviews: 512
     },
     {
-      name: "HealthFirst Medical Group",
-      description: "Network of primary care clinics focused on preventive healthcare and patient wellness.",
-      category: "Healthcare",
-      image: "https://example.com/healthfirst-logo.png",
-      rating: 4.8
+      logo: "https://www.thestatesman.com/wp-content/uploads/2024/01/Untitled-design_20240130_111243_0000.jpg",
+      name: "Zerodha",
+      description: "Trading Finance Company",
+      averageRating: 4.8,
+      services: [
+        "Stocks Trading ( India )",
+        "Specialized Care",
+        
+      ],
+      numberOfReviews: 1024
     },
     {
-      name: "FreshBite Foods",
-      description: "Organic food delivery service providing farm-to-table meals for health-conscious consumers.",
-      category: "Food & Beverage",
-      image: "https://example.com/freshbite-logo.png",
-      rating: 4.0
+      logo: "https://pwebassets.paytm.com/commonwebassets/ir/images/press-kit/brand.png",
+      name: "Paytm",
+      description: "Payment Gateway and Finance Company",
+      averageRating: 4.6,
+      services: [
+        "Payment Platform",
+        "Merchant Gateway",
+        "Finance",
+        "Stock Trading"
+      ],
+      numberOfReviews: 729
     },
     {
-      name: "SwiftShip Logistics",
-      description: "Global shipping and logistics company offering efficient supply chain solutions.",
-      category: "Transportation",
-      image: "https://example.com/swiftship-logo.png",
-      rating: 3.9
+      logo: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0-kVvcT0NwW9A0ynTpSrGRXht3TO0mi8hWxXSC7LHJwGaWHpe",
+      name: "Internshala",
+      description: "Ed-Tech",
+      averageRating: 4.4,
+      services: [
+        "Edtech",
+        "Classified Jobs",
+      
+      ],
+      numberOfReviews: 876
+    },
+    {
+      logo: "https://cdn.worldvectorlogo.com/logos/maruti-suzuki-logo.svg",
+      name: "Maruti Suzuki",
+      description: "Automobile ",
+      averageRating: 4.3,
+      services: [
+        "Automobile Manufacturing",
+        "Autombile Sellers ",
+        "Automobile Servicing",
+      ],
+      numberOfReviews: 651
+    },
+    {
+      logo: "https://1000logos.net/wp-content/uploads/2018/03/SBI-Logo-500x281.png",
+      name: "State Bank Of India",
+      description: "Financial Services",
+      averageRating: 4.9,
+      services: [
+        "Banking",
+        "Loans",
+        "Insurance",
+        "Stocks"
+      ],
+      numberOfReviews: 408
+    },
+    {
+      logo: "https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Hindustan_Unilever_Logo.svg/250px-Hindustan_Unilever_Logo.svg.png",
+      name: "Hindustan Unilever",
+      description: "FMCG",
+      averageRating: 4.7,
+      services: [
+        "Food Products",
+        "Homecare Products",
+        "Personal Care Products",
+        "Hygience Products"
+      ],
+      numberOfReviews: 937
     }
-  ]
+  ];
+
+  return { companies };
 };
 
-
-
-export default companyData;
+export default CompanyData;
